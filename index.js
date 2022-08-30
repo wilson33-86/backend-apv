@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 conectarDb();
 
-const dominiosPermitidos = [process.env.FRONTEND_URL];
+const dominiosPermitidos = [process.env.FRONTEND_URL,'https://thunderous-gaufre-57cfa9.netlify.app'];
 const corsOptions={
     origin:function(origin,callback){
         if(dominiosPermitidos.indexOf(origin) !== -1){
