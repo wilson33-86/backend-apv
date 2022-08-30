@@ -27,7 +27,7 @@ app.set("PORT",process.env.PORT || 4000);
 app.use(express.json());
 
 //rutas
-app.use('/api/veterinarios',routerVeterinario);
+app.use('api/veterinarios',routerVeterinario);
 app.use('/api/pacientes',routerPaciente);
 
 app.listen(app.get("PORT"),()=>{
